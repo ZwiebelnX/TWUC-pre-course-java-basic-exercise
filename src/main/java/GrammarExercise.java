@@ -32,7 +32,7 @@ public class GrammarExercise {
             .distinct()
             .sorted()
             .map(String::toUpperCase)
-            .map(s -> s.replaceAll("(.)", "$1 ").trim())
+            .map(s -> s.replaceAll("(.)", "$1 ").trim()) // 加空格
             .collect(Collectors.toList());
     }
 }
