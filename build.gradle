@@ -5,6 +5,8 @@ plugins {
 group 'twu.china'
 version '1.0-SNAPSHOT'
 
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
 sourceCompatibility = 1.8
 
 repositories {
